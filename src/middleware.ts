@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 // Define your public and private routes
-const publicRoutes = ['/auth/login', '/auth/register', '/']; // Routes accessible without auth
+// const publicRoutes = ['/auth/login', '/auth/register', '/']; // Routes accessible without auth
 const privateRoutes = ['/dashboard', '/profile', '/settings']; // Routes requiring auth
 const authRoutes = ['/auth/login', '/auth/register']; // Auth-specific routes 
 

@@ -1,5 +1,5 @@
 // app/interview/page.tsx
-export default function InterviewPage() {
+export default function Page() {
     return (
       <div>
         <h1 className="text-2xl font-bold">Interview Prep</h1>

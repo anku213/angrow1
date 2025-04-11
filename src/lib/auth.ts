@@ -1,5 +1,5 @@
 // lib/auth.ts
-import { cookies } from 'next/headers';
+// import { cookies } from 'next/headers';
 import jwt from 'jsonwebtoken';
 
 export function getUserFromToken() {
@@ -11,6 +11,7 @@ export function getUserFromToken() {
         const decoded = jwt.verify(token, process.env.JWT_SECRET as string);
         return decoded;
     } catch (err) {
+        console.log(err);
         return null;
     }
 }

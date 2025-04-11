@@ -18,13 +18,13 @@ export default function TasksPage() {
     setUsers(data);
   };
 
-  const toggleStatus = async (id: string, status: boolean) => {
-    await fetch(`/api/users/${id}`, {
-      method: "PATCH",
-      body: JSON.stringify({ status: !status }),
-    });
-    fetchUsers();
-  };
+  // const toggleStatus = async (id: string, status: boolean) => {
+  //   await fetch(`/api/users/${id}`, {
+  //     method: "PATCH",
+  //     body: JSON.stringify({ status: !status }),
+  //   });
+  //   fetchUsers();
+  // };
 
   useEffect(() => {
     fetchUsers();
